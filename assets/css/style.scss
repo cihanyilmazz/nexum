@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+$white: #fff;
+$bgLight: #f3f3f3;
+$borderColor: #ced4da;
+
+$font: 'Poppins', sans-serif;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	outline:none;
+	list-style:none;
+    text-decoration: none;
+}
+body{
+    font-family: $font;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.text-small{
+    font-size: small;
+}
+.ellipsis-5{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.main{
+    background-color: $bgLight;
+    margin: 30px;
+}
+.box-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 60px);
+    height: calc(100vh - 60px);
+}
+.box{
+    position: relative;
+    width: 600px;
+    margin: auto;
+}
+.search-bar{
+    position: relative;
+    i{
+        position: absolute;
+        right: 10px;
+        top: 7px;
+    }
+}
+.movie-search-wrapper{
+    background-color: $white;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    border: 1px solid $borderColor;
+    .content-wrapper{
+        a{
+            text-decoration: underline;
+            color: #000;
+        }
+    }
+    .content-title{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .triangle{
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 20px solid $white;
+        position: absolute;
+        top: 35px;
+    }
+    .img-wrapper img{
+        width: 200px;
+        height: auto;
+        margin-right: 20px;
+    }
+}
+.autocomplate-customize{
+    width: auto !important;
+    position: inherit !important;
+}

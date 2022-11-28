@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexum Movies</title>
+    <script src="dist/main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="box-wrapper">
+           <div class="box">
+                <div class="search-bar">
+                    <form method="get" action="listing.html">
+                        <input type="text" class="form-control" id="searchBar" placeholder="Bulmak istediğiniz filmin adını yazınız">
+                    </form>
+               <div id="searchButton">
+                <i id="search-icon" class="ri-search-line text-primary"></i>
+                <i id="arrow-icon" class="ri-arrow-right-line text-primary" style="display: none;"></i>
+               </div>
+                </div>
+                <div id="movie-bar" class="movie-search-wrapper">
+                    <div class="triangle"></div>
+                        <div id="movieList" class="movie-items">
+                            <!-- js-->
+                            
+                        </div>
+                    <div class="more-details d-flex justify-content-center">
+                        <a href="javascript:void(0)" id="moreButton" class="d-flex align-items-center">
+                            <span>DAHA FAZLA SONUÇ</span><i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+           </div>
+        </div>
+    </div>    
+    
+</body>
+
+</html>
