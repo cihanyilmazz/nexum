@@ -10,7 +10,7 @@ npm install
 ## Start dev server
 
 ```sh
-npm start
+npm run start
 ```
 
 ## Build production code
